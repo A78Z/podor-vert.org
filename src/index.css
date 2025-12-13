@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+/* Custom Swiper Styles */
+.impact-carousel .swiper-button-next,
+.impact-carousel .swiper-button-prev {
+  color: #fff !important;
+  background-color: rgba(22, 163, 74, 0.6);
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.impact-carousel .swiper-button-next:hover,
+.impact-carousel .swiper-button-prev:hover {
+  background-color: rgba(22, 163, 74, 0.9);
+}
+
+.impact-carousel .swiper-button-next::after,
+.impact-carousel .swiper-button-prev::after {
+  font-size: 18px !important;
+  font-weight: bold;
+}
+
+.impact-carousel .swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  width: 10px !important;
+  height: 10px !important;
+  opacity: 1 !important;
+  transition: all 0.3s;
+}
+
+.impact-carousel .swiper-pagination-bullet-active {
+  background-color: #fff !important;
+  transform: scale(1.25);
+}
+
+/* Swiper Custom Active Bullet to fix Runtime Error */
+.swiper-pagination-bullet-custom-active {
+  background-color: #16a34a !important; /* !bg-green-600 */
+  width: 1.5rem !important; /* !w-6 (24px) */
+  transition-property: all;
+  transition-duration: 300ms;
+}
+
+/* Custom Navigation Arrows for Slider */
+.nav-arrow {
+  width: 3.25rem; /* 52px */
+  height: 3.25rem;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  color: #1f7a3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  transition: all 0.25s ease;
+  z-index: 20;
+}
+
+.nav-arrow:hover {
+  transform: scale(1.08);
+  background: #1f7a3f;
+  color: white;
+}
+
+.nav-arrow.nav-left {
+  margin-right: 0.75rem; /* 12px */
+}
+
+.nav-arrow.nav-right {
+  margin-left: 0.75rem; /* 12px */
+}
+
+/* Hide default swiper buttons if present */
+.swiper-button-next, .swiper-button-prev {
+  display: none !important;
+}
