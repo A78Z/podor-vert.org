@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import { Home, User, Target, Compass, CheckCircle, DollarSign, Image, Newspaper } from 'lucide-react';
 import { pageview } from './lib/analytics';
 
@@ -111,6 +112,7 @@ function App() {
   return (
     <Router>
       <AppContent />
+      <Analytics />
     </Router>
   );
 }
