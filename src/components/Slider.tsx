@@ -9,7 +9,7 @@ const Slider: React.FC = () => {
   const slides = [
     {
       id: 1,
-      image: '/images/slide_engagement.jpg',
+      image: '/images/slide_engagement.webp',
       title: 'Bienvenue sur le site officiel de Podor Vert',
       subtitle: 'Un avenir vert commence ici',
       buttons: [
@@ -19,7 +19,7 @@ const Slider: React.FC = () => {
     },
     {
       id: 2,
-      image: '/images/slidepodorvert3.jpeg',
+      image: '/images/slidepodorvert3.webp',
       title: 'Ensemble pour un Podor plus vert',
       subtitle: 'Mobilisation citoyenne et actions locales durables',
       buttons: [
@@ -28,7 +28,7 @@ const Slider: React.FC = () => {
     },
     {
       id: 3,
-      image: '/images/slidepodorvert2.JPG',
+      image: '/images/slidepodorvert2.webp',
       title: 'Reboiser aujourd’hui pour protéger demain',
       subtitle: 'Des milliers d’arbres plantés pour l’avenir',
       buttons: [
@@ -37,7 +37,7 @@ const Slider: React.FC = () => {
     },
     {
       id: 4,
-      image: '/images/slidepodorvert4.jpeg',
+      image: '/images/slidepodorvert4.webp',
       title: 'Former la génération verte',
       subtitle: 'Les écoles au cœur du changement climatique',
       buttons: [
@@ -46,7 +46,7 @@ const Slider: React.FC = () => {
     },
     {
       id: 5,
-      image: '/images/slidepodorvert1.JPG',
+      image: '/images/slidepodorvert1.webp',
       title: 'Agissez maintenant',
       subtitle: 'Chaque geste compte pour un Sénégal durable',
       buttons: [
